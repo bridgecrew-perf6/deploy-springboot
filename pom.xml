@@ -14,7 +14,8 @@
 	<name>aws-deploy-springboot</name>
 	<description>aws-deploy-springboot</description>
 	<properties>
-		<java.version>11</java.version>
+		<!-- ec2のopenjdkと互換性があるバージョンを指定 -->
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 <!-- 		<dependency>

@@ -8,6 +8,8 @@ public class AwsDeployController {
 
 	@GetMapping("/index")
 	public String getIndex() {
-		return "/index";
+		// "/index": jarファイルで実行するとTemplateInputExceptionが発動する
+		// "index" : 最初の'/'を消す
+		return "index";
 	}
 }
